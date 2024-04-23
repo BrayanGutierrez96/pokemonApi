@@ -4,21 +4,23 @@
         this.imgUrl = imgUrl
         this.description = description;
         
+    }lanzarPoder(){
+        alert("¡Poder lanzado!")
     }
 }
- class trueno extends Pokemon{
+ class thunder extends Pokemon{
     constructor(name, imgUrl, description){
         super(name, imgUrl, description)
     }
-    impacTrueno(){
-        alert("¡RAYOOOS!")
+    lanzarPoder(){
+        alert("¡TRUENOOOOOS!")
     }
 }
  class fire extends Pokemon {
     constructor(name, imgUrl, description){
         super(name, imgUrl, description)
     }
-    lanzarFuego(){
+    lanzarPoder(){
         alert("¡FUEGOOOO!")
     }
 }
@@ -27,16 +29,15 @@ class water extends Pokemon {
     constructor(name,imgUrl, description){
         super(name, imgUrl, description)
     }
-    lanzarAgua(){
+    lanzarPoder(){
         alert("¡AGUUUUAAA!")
     }
 }
 
-const pikachu = new trueno("pikachu", "./assets/R.png", "ratón de trueno")
+const pikachu = new thunder("pikachu", "./assets/R.png", "ratón de trueno")
 const sharizar = new fire("Sharizar", "./assets/sharizar.jpg", "Dragon de fuego")
 const bulbasur = new water("Bulbasur", "./assets/bulbasur.jpg", "Tortuga de agua")
-const pokemons = [{}]
-pokemons.shift()
+const pokemons = []
 pokemons.push(pikachu,sharizar,bulbasur)
 
 export default pokemons
