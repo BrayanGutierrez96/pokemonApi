@@ -1,5 +1,4 @@
 import pokemons from "./data.js";
-import { trueno, fire, water} from "./data.js"
 
 /* console.log(pokemons); */
 const card = document.querySelector(".cards")
@@ -16,18 +15,10 @@ for(let i =0; i<pokemons.length; i ++){
     card.innerHTML = currentHtml + card.innerHTML
     const btn = card.querySelector(".btn");
 
-    // Asigna el evento click al botón específico
     btn.addEventListener("click", () => {
-        // Ejecuta el método específico del Pokémon
-        if (pokemons instanceof trueno) {
-            pokemons.impacTrueno();
-        } else if (pokemons instanceof fire) {
-            pokemons.lanzarFuego();
-        } else if (pokemons instanceof water) {
-            pokemons.lanzarAgua();
-        }
     });
 }
+
 /* 
 const btn = document.querySelector(".btn")
 btn.addEventListener("click", () => {

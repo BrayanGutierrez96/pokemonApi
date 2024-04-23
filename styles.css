@@ -19,12 +19,15 @@
     flex-direction: column;
     border: 2px solid;
     border-radius: 10px;
+    background-color: white;
 }
 .cards__img-container{
-    height: 250px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
 }
 .image-card{
-    width: 100%;
+    width: 60%;
     height: 100%;
 }
 .cards__name-card{
